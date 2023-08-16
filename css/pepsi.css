@@ -1,0 +1,167 @@
+body {
+  background-color: #0065c3;
+  color: white;
+  font-family: cursive;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 2.2rem;
+  position: sticky;
+  z-index: 999;
+}
+.container nav {
+  margin-right: 6rem;
+}
+.container ul {
+  display: flex;
+  gap: 25px;
+  align-content: flex-start;
+}
+.container ul li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container ul li:hover {
+  font-weight: 900;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.hero-section .left-hero {
+  padding-left: 15px;
+}
+.hero-section .left-hero h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.hero-section .left-hero button {
+  background-color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 25px;
+  border: white;
+  cursor: pointer;
+}
+.hero-section aside img {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  margin-bottom: 2.5rem;
+}
+footer div img {
+  width: 20px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  /* CSS styles go here */
+  .activate {
+    transform: translateX(0px);
+    display: block;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .container nav {
+    margin-right: 5.5rem;
+  }
+  .container nav svg {
+    position: absolute;
+    display: block;
+    margin-top: 0;
+    padding: 0;
+    right: 0;
+    cursor: pointer;
+    stroke: white;
+    fill: white;
+    float: right;
+  }
+  .container nav ul {
+    display: none;
+    transform: translateX(800px);
+    background-color: #0065c3;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .container nav .activate {
+    transform: translateX(0px);
+    display: block;
+    position: fixed;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    z-index: 999;
+    inset: 0;
+  }
+  .container nav .activate svg {
+    position: relative;
+    right: 0;
+    padding: 10px;
+  }
+  .container nav .activate li {
+    padding: 25px;
+    margin-top: 3em;
+    opacity: 0.7;
+  }
+  .container nav .activate li:hover {
+    opacity: 1;
+  }
+  .hero-section {
+    margin-bottom: 4rem;
+  }
+  .hero-section .left-hero {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 3.9rem;
+  }
+  .hero-section .left-hero h1 {
+    font-size: 3rem;
+  }
+  .hero-section .left-hero p {
+    margin-bottom: 3rem;
+    line-height: 2.2;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .container {
+    margin-bottom: 6rem;
+  }
+}/*# sourceMappingURL=pepsi.css.map */
